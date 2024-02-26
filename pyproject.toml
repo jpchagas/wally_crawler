@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "wally-crawler"
+name = "wally_crawler"
 version = "0.1.0"
 description = ""
 authors = ["João Pedro Chagas <jpchagas@gmail.com>"]

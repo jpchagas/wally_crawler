@@ -1,0 +1,31 @@
+title: response.xpath("//title/text()").get()
+value: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[2]/div[2]/div/text()").get()
+id: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[1]/div/div[2]/text()").get()
+neighborhood: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[2]/div[1]/div/text()").get()
+type: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[1]/div/div[1]/text()").get()
+rooms: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[3]/div[1]/div/div[1]/text()").get()
+garage:  response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[3]/div[1]/div/div[2]/text()").get()
+m2: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[3]/div[1]/div/div[3]/text()").get()
+description: response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[4]/div[1]/div[2]/p[1]/text()").get()
+
+response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[4]/div[1]/div[3]/div/div[1]/text()").get()
+
+Wally Serivce - API Reponsável por armazenar o CRUD dos Dados
+Wally Crawler - Crawler Reponsável por Extrair os Dados
+Wally's - Dashboard para exploração dos dados
+
+
+scrapy genspider privateimoveis https://privateimoveis.com/
+
+
+
+https://privateimoveis.com/imoveis/status/venda/cidade/porto-alegre?o=destaque&pag=1
+https://privateimoveis.com/imoveis/status/alugar/cidade/porto-alegre?o=destaque&pag=1
+
+
+https://privateimoveis.com/imovel/venda/cobertura-3-suites-bairro-bela-vista-394m2/porto-alegre/1801
+https://privateimoveis.com/imovel/venda/cobertura-4-suites-bairro-bela-vista-724m2/porto-alegre/4833
+https://privateimoveis.com/imovel/alugar/apartamento-3-suites-bairro-bela-vista-238m2/porto-alegre/40100
+
+
+scrapy shell https://privateimoveis.com/imovel/venda/cobertura-4-suites-bairro-bela-vista-724m2/porto-alegre/4833
