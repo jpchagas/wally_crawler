@@ -9,4 +9,16 @@ import scrapy
 class WallyCrawlerItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    property_type = scrapy.Field()
+    neighborhood = scrapy.Field()
+    source_id = scrapy.Field()
+    value = scrapy.Field()
+    rooms = scrapy.Field()
+    garage = scrapy.Field()
+    m2 = scrapy.Field()
+    title = scrapy.Field()
+    description = scrapy.Field()
+    real_state = scrapy.Field()
+
+    # TODO: implement list of apartament caracteristics
+    # TODO: implement list of condo caracteristics
