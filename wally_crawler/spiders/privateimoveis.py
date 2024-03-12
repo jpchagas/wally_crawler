@@ -20,10 +20,9 @@ class PrivateimoveisSpider(scrapy.Spider):
         title = response.xpath("//title/text()").get()
         description = response.xpath("/html/body/app-root/default-root/div[1]/app-property/div[1]/div[3]/div[4]/div[1]/div[2]/p[1]/text()").get()
         real_state = "private imoveis"
-        property_features = []
-        condo_features = []
-        for feature in response.css('[id="collapseFeature"]'):
-            property_features.append(feature.css("badge.badge-pill.badge-private.mt-2.mt-2.ng-star-inserted::text"))
+        property_features = response.xpath('//div[@id="collapseFeature"]/div/text()').getall()
+        condo_features = response.xpath('//div[@id="collapseInfra"]/div/text()').getall()
+            
         
         yield{
             # TODO: implement a way to get the images addresses
@@ -39,7 +38,4 @@ class PrivateimoveisSpider(scrapy.Spider):
             'real_state': real_state,
             'property_features' : property_features,
             'condo_features': condo_features
-            
-            # TODO: implement list of apartament caracteristics
-            # TODO: implement list of condo caracteristics
         }
