@@ -1,12 +1,11 @@
 import scrapy
 from mongoengine import *
-
+from ..items import WallyCrawlerItem
 
 class PrivateimoveisSpider(scrapy.Spider):
     name = "privateimoveis"
     allowed_domains = ["privateimoveis.com"]
     start_urls = ["https://privateimoveis.com/imovel/venda/apartamento-3-dormitorios-bairro-petropolis-121m2/porto-alegre/46267"]
-    connect('local')
 
 
     def parse(self, response):

@@ -19,6 +19,5 @@ class WallyCrawlerItem(scrapy.Item):
     title = scrapy.Field()
     description = scrapy.Field()
     real_state = scrapy.Field()
-
-    # TODO: implement list of apartament caracteristics
-    # TODO: implement list of condo caracteristics
+    property_features = scrapy.Field()
+    condo_features = scrapy.Field()
